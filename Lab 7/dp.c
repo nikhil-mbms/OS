@@ -7,7 +7,6 @@
 
 sem_t s[N];  
 
-// philosopher function
 void *p(void *arg) {
     int id = *(int *)arg;
 
