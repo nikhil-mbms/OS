@@ -11,7 +11,6 @@ int i = 0, o = 0;
 sem_t e, f;
 pthread_mutex_t m;
 
-// producer
 void *p(void *arg) {
     int x;
     for (int k = 0; k < 10; k++) {
@@ -30,7 +29,6 @@ void *p(void *arg) {
     return NULL;
 }
 
-// consumer
 void *c(void *arg) {
     int x;
     for (int k = 0; k < 10; k++) {
